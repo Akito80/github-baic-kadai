@@ -1,0 +1,36 @@
+akito80@yuina:~/study/github-basic-kadai$ git commit -m 'Hello,worde追加'
+[main a412537] Hello,worde追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+akito80@yuina:~/study/github-basic-kadai$ vim git_challenge/hello_world.txt
+Vim: Caught deadly signal SEGV
+Vim: Finished.
+
+Segmentation fault (core dumped)
+akito80@yuina:~/study/github-basic-kadai$ vim git_challenge/hello_world.txt
+akito80@yuina:~/study/github-basic-kadai$ git add .
+akito80@yuina:~/study/github-basic-kadai$ git commit -m 'こんにちは、世界！追加'
+[main 393a368] こんにちは、世界！追加
+ 1 file changed, 1 insertion(+)
+akito80@yuina:~/study/github-basic-kadai$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+akito80@yuina:~/study/github-basic-kadai$ git log
+commit 393a36835ac8f15a2eba2573c0faba29e9e9bcc8 (HEAD -> main)
+Author: Akito80 <dezidezi1119@gmail.com>
+Date:   Sun Feb 16 10:27:07 2025 +0900
+
+    こんにちは、世界！追加
+
+commit a412537c29ec896addbac8c53c6b50591e3f7d37
+Author: Akito80 <dezidezi1119@gmail.com>
+Date:   Sun Feb 16 10:25:35 2025 +0900
+
+    Hello,worde追加
+
+commit 14c5085e8348ef341a46970f1c155361a65f5d69 (origin/main, origin/HEAD)
+Author: Akito80 <dezidezi1119@gmail.com>
+Date:   Wed Feb 12 17:57:49 2025 +0900
